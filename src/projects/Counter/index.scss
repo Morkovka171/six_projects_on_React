@@ -14,6 +14,12 @@ body {
   height: 100vh;
   text-align: center;
 
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   h1 {
     color: #000;
     font-size: 7rem;
@@ -42,7 +48,7 @@ body {
     border-radius: 15px;
     padding: 10px 25px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 5px 10px;
     transition: all 0.05s ease-in-out;
 
     &.minus {
@@ -57,6 +63,14 @@ body {
       color: #fff;
       box-shadow: 0 4px 0 darken(#2a9d8f, 10%);
       border: 1px solid darken(#2a9d8f, 15%);
+    }
+
+    &.reset {
+      background-color: #aaa;
+      color: #fff;
+      box-shadow: 0 4px 0 darken(#aaa, 10%);
+      border: 1px solid darken(#aaa, 15%);
+      margin: 15px 0;
     }
 
     &:hover {
