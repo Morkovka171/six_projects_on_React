@@ -1,16 +1,10 @@
-import './index.scss';
+import React from 'react'
+import Counter from './projects/Counter/index'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <div>
-        <h2>Счетчик:</h2>
-        <h1>0</h1>
-        <button className="minus">- Минус</button>
-        <button className="plus">Плюс +</button>
-      </div>
-    </div>
-  );
+    <Counter/>
+  )
 }
 
-export default App;
+export default App
