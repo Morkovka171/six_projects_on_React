@@ -3,7 +3,9 @@ import React from 'react';
 // import Modal from './projects/Modal/index';
 // import Quiz from './projects/Quiz/index';
 // import Userss from './projects/Users/index';
-import Currency from './projects//Converter/index';
+// import Currency from './projects/Converter/index';
+import Photos from './projects/Photos/index';
+
 
 const App = () => {
   return (
@@ -12,7 +14,8 @@ const App = () => {
       {/* <Modal /> */}
       {/* <Quiz /> */}
       {/* <Userss /> */}
-      <Currency />
+      {/* <Currency /> */}
+      <Photos />
     </>
   )
 }
