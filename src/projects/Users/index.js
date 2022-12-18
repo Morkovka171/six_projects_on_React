@@ -23,15 +23,20 @@ function Userss() {
       .finally(() => setLoading(false));
   }, []);
 
+  // Функция для передачи в стейт searchValue текста из поля поиска
   const onChangeSearchValue = (event) => {
     setSearchValue(event.target.value);
   };
 
-  const onClickInvite = (id) => {
-    if (invites.includes(id)) {
-      setInvites((prev) => prev.filter((_id) => _id !== id));
+  const onClickInvite = (clickedUserId) => {
+    if (invites.includes(clickedUserId)) {
+      setInvites(
+        (previousInvites) => previousInvites.filter((userId) => userId !== clickedUserId)
+      );
     } else {
-      setInvites((prev) => [...prev, id]);
+      setInvites(
+        (previousInvites) => [...previousInvites, clickedUserId]
+      );
     }
   };
 

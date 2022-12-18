@@ -29,6 +29,9 @@ export const Users = ({
           <Skeleton />
           <Skeleton />
           <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
         </div>
       ) : (
         <ul className="users-list">
@@ -54,5 +57,5 @@ export const Users = ({
         invites.length > 0 && (<button onClick={onClickSendInvites} className="send-invite-btn">Отправить приглашение</button>
         )}
     </>
-  );
+  );  
 };
