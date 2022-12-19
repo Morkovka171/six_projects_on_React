@@ -1,0 +1,35 @@
+.header__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 20px 0 0 0;
+    padding: 0 50px;
+    height: 50px;
+    display: flex;
+}
+
+.header__item {
+    list-style: none;
+    flex: 1;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    &.active {
+        color: #fff;
+        background-color: #000;
+    }
+
+    &:hover {
+        border-color: #000;
+    }
+}

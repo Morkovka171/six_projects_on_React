@@ -18,7 +18,7 @@ function Photos() {
   const [collections, setCollections] = React.useState([]);
 
   React.useEffect(() => {
-    setIsLoading(true);
+    setIsLoading(true); 
     const category = categoryId ? `category=${categoryId}` : "";
 
     fetch(
